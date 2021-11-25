@@ -17,12 +17,12 @@
 /*
 ihexcat concatenates Intel HEX files.
 
+Usage:
+	ihexcat [file.hex ...] >out.hex
+
 Data and start addresses from subsequent files overwrite those from
 previous files.  Merging data from 16-bit and 32-bit Intel HEX files
 is not possible.
-
-Usage:
-	ihexcat [file.hex ...] >out.hex
 */
 package main
 

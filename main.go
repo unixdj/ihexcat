@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 Vadim Vygonets <vadik@vygo.net>
+ * Copyright (c) 2021-2022 Vadim Vygonets <vadik@vygo.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -45,10 +45,9 @@ func main() {
 		}
 		f.Close()
 	}
-	if ix.Flags == ihex.FormatAuto {
-		ix.Flags = ihex.Format32bit
+	if ix.Format == ihex.FormatAuto {
+		ix.Format = ihex.Format32Bit
 	}
-	ix.Flags |= ihex.ShortData
 	if err := ix.WriteTo(os.Stdout); err != nil {
 		log.Fatal(err)
 	}

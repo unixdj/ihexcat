@@ -1,4 +1,4 @@
-module guthub.com/unixdj/ihexcat
+module github.com/unixdj/ihexcat
 
 go 1.13
 

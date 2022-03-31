@@ -10,4 +10,4 @@ previous files.  Merging data from 16-bit and 32-bit Intel HEX files
 is not possible.
 
 Installing:
-	go get github.com/unixdj/ihexcat
+	go install github.com/unixdj/ihexcat@latest

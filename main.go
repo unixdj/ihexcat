@@ -41,7 +41,7 @@ func main() {
 			log.Fatal(err)
 		}
 		if err = ix.ReadFrom(f); err != nil {
-			log.Fatal(v+":", err)
+			log.Fatal(v, ": ", err)
 		}
 		f.Close()
 	}

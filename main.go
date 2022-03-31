@@ -34,6 +34,7 @@ import (
 )
 
 func main() {
+	log.SetFlags(0)
 	var ix ihex.IHex
 	for _, v := range os.Args[1:] {
 		f, err := os.Open(v)

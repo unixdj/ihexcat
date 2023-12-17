@@ -46,9 +46,6 @@ func main() {
 		}
 		f.Close()
 	}
-	if ix.Format == ihex.FormatAuto {
-		ix.Format = ihex.Format32Bit
-	}
 	if err := ix.WriteTo(os.Stdout); err != nil {
 		log.Fatal(err)
 	}
